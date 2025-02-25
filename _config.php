@@ -9,7 +9,7 @@ use SilverStripe\Forms\HTMLEditor\HtmlEditorConfig;
 // enable shortcodable buttons and add to HtmlEditorConfig
 $htmlEditorNames = Config::inst()->get(Shortcodable::class, 'htmleditor_names');
 if (is_array($htmlEditorNames)) {
-    $shortcodableModuleResourceLoader = ModuleLoader::inst()->getManifest()->getModule('restruct/silverstripe-shortcodable');
+    $shortcodableModuleResourceLoader = ModuleLoader::inst()->getManifest()->getModule('daledezma/silverstripe-shortcodable');
     foreach ($htmlEditorNames as $htmlEditorName) {
         HtmlEditorConfig::get($htmlEditorName)
             ->enablePlugins([
