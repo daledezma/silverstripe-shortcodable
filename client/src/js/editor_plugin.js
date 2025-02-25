@@ -53,10 +53,10 @@ var shortcodable_editorplugin = {
                 });
 
                 // add button
-                editor.addButton('shortcodable', {
+                editor.ui.registry.addButton('shortcodable', {
                     classes: 'shortcodable',
                     tooltip: 'Insert/edit shortcode',
-                    onclick: shortcodable.openDialog,
+                    onAction: shortcodable.openDialog,
                 });
 
             });
