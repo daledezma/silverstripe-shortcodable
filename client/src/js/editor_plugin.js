@@ -4,7 +4,7 @@ var shortcodable_editorplugin = {
 
     getInfo: function () {
         return {
-            longname: 'shortcodable_editorplugin - Shortcode UI plugin for SilverStripe',
+            longname: 'shortcodable_editorplugin - Shortcode UI plugin for SilverStripe (with NN improvements)',
             version: "2.0"
         };
     },
@@ -54,9 +54,15 @@ var shortcodable_editorplugin = {
 
                 // add button
                 editor.ui.registry.addButton('shortcodable', {
-                    classes: 'shortcodable',
+                    text: 'Shortcode',
                     tooltip: 'Insert/edit shortcode',
-                    onAction: shortcodable.openDialog,
+                    onAction: function () {
+                        if (typeof nn_shortcodable !== 'undefined') {
+                            nn_shortcodable.openDialog();
+                        } else {
+                            console.error('nn_shortcodable not defined');
+                        }
+                    }
                 });
 
             });

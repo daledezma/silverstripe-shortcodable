@@ -13,6 +13,14 @@ SilverStripe\Admin\LeftAndMain:
 Shortcodable\Shortcodable:
   htmleditor_names:
     - cms
+  shortcodable_classes:
+    - Northwestern\Now\HighlightsShortcode
+    - Northwestern\Now\FloatImageShortcode
+    - Northwestern\Now\CalloutShortcode
+    - Northwestern\Now\SoundcloudShortcode
+    - Northwestern\Now\QuoteShortcode
+    - Northwestern\Now\StatisticsShortcode
+    - Northwestern\Now\TextInterrupterShortcode
 
 SilverStripe\Control\Director:
   rules:
