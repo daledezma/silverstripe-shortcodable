@@ -57,10 +57,10 @@ var shortcodable_editorplugin = {
                     text: 'Shortcode',
                     tooltip: 'Insert/edit shortcode',
                     onAction: function () {
-                        if (typeof nn_shortcodable !== 'undefined') {
-                            nn_shortcodable.openDialog();
+                        if (typeof shortcodable !== 'undefined') {
+                            shortcodable.openDialog();
                         } else {
-                            console.error('nn_shortcodable not defined');
+                            console.error('shortcodable not defined');
                         }
                     }
                 });
